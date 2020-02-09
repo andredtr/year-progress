@@ -30,14 +30,23 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         button.image = NSImage(named: "hourglass")
-        button.target = self
-        button.action = #selector(printQuote(_:))
+       
+        constructMenu()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
+    
+    func constructMenu() {
+      let menu = NSMenu()
 
+      menu.addItem(NSMenuItem(title: "Print Quote", action: #selector(AppDelegate.printQuote(_:)), keyEquivalent: "P"))
+      menu.addItem(NSMenuItem.separator())
+      menu.addItem(NSMenuItem(title: "Quit Quotes", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+
+      statusItem?.menu = menu
+    }
 
 }
 
