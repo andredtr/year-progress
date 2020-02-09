@@ -685,11 +685,11 @@
             <objects>
                 <viewController storyboardIdentifier="TimeViewController" id="XfG-lQ-9wD" customClass="TimeViewController" customModule="year_progress" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="283" height="168"/>
+                        <rect key="frame" x="0.0" y="0.0" width="283" height="174"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DEM-fW-LZA">
-                                <rect key="frame" x="18" y="132" width="35" height="16"/>
+                                <rect key="frame" x="18" y="138" width="35" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Day:" id="T8r-xF-gCj">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -697,7 +697,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xNY-xS-d4p">
-                                <rect key="frame" x="18" y="86" width="47" height="16"/>
+                                <rect key="frame" x="18" y="92" width="47" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Month:" id="MLt-Jm-yjb">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -705,7 +705,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3FW-hV-Wu8">
-                                <rect key="frame" x="18" y="40" width="35" height="16"/>
+                                <rect key="frame" x="18" y="46" width="35" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Year:" id="kk6-fj-bv5">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -713,10 +713,10 @@
                                 </textFieldCell>
                             </textField>
                             <progressIndicator wantsLayer="YES" maxValue="100" doubleValue="70" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="A9r-72-H4a">
-                                <rect key="frame" x="76" y="131" width="158" height="18"/>
+                                <rect key="frame" x="76" y="137" width="158" height="18"/>
                             </progressIndicator>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Eka-P8-GLo">
-                                <rect key="frame" x="237" y="132" width="28" height="16"/>
+                                <rect key="frame" x="237" y="138" width="28" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="45%" id="Pqd-e2-ujp">
                                     <font key="font" metaFont="system" size="9"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -724,7 +724,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rL4-Xb-kku">
-                                <rect key="frame" x="237" y="88" width="28" height="12"/>
+                                <rect key="frame" x="237" y="94" width="28" height="12"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="45%" id="RoF-6X-ENs">
                                     <font key="font" metaFont="system" size="9"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -732,7 +732,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Yyt-nX-zAC">
-                                <rect key="frame" x="237" y="43" width="28" height="10"/>
+                                <rect key="frame" x="237" y="49" width="28" height="10"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="45%" id="Jux-BJ-79V">
                                     <font key="font" metaFont="system" size="9"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -740,47 +740,67 @@
                                 </textFieldCell>
                             </textField>
                             <progressIndicator wantsLayer="YES" maxValue="100" doubleValue="50" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="RaT-Zf-c5Y">
-                                <rect key="frame" x="75" y="84" width="158" height="20"/>
+                                <rect key="frame" x="75" y="90" width="158" height="20"/>
                             </progressIndicator>
                             <progressIndicator wantsLayer="YES" maxValue="100" doubleValue="50" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="XmM-KT-2N0">
-                                <rect key="frame" x="76" y="38" width="158" height="20"/>
+                                <rect key="frame" x="76" y="44" width="158" height="20"/>
                             </progressIndicator>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jpL-9a-Mp2">
+                                <rect key="frame" x="203" y="-3" width="66" height="32"/>
+                                <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bFa-mR-ojc">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="quitACtion:" target="XfG-lQ-9wD" id="InS-qL-Xyw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Eka-P8-GLo" firstAttribute="leading" secondItem="A9r-72-H4a" secondAttribute="trailing" constant="5" id="FCu-J8-0HV"/>
-                            <constraint firstItem="DEM-fW-LZA" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="G6q-ny-3CF"/>
-                            <constraint firstItem="A9r-72-H4a" firstAttribute="bottom" secondItem="Eka-P8-GLo" secondAttribute="bottom" id="Jn2-1P-DEZ"/>
-                            <constraint firstItem="A9r-72-H4a" firstAttribute="trailing" secondItem="XmM-KT-2N0" secondAttribute="trailing" id="LPv-Ey-tAi"/>
-                            <constraint firstAttribute="trailing" secondItem="Eka-P8-GLo" secondAttribute="trailing" constant="20" symbolic="YES" id="LoP-Ts-dL6"/>
-                            <constraint firstItem="rL4-Xb-kku" firstAttribute="leading" secondItem="Yyt-nX-zAC" secondAttribute="leading" id="NVx-Yo-vN5"/>
-                            <constraint firstItem="xNY-xS-d4p" firstAttribute="centerY" secondItem="RaT-Zf-c5Y" secondAttribute="centerY" id="Qpb-oR-iOF"/>
-                            <constraint firstItem="A9r-72-H4a" firstAttribute="top" secondItem="Eka-P8-GLo" secondAttribute="top" id="QzU-73-ima"/>
-                            <constraint firstItem="RaT-Zf-c5Y" firstAttribute="leading" secondItem="xNY-xS-d4p" secondAttribute="trailing" constant="12" id="RZk-tV-1mt"/>
-                            <constraint firstItem="XmM-KT-2N0" firstAttribute="top" secondItem="RaT-Zf-c5Y" secondAttribute="bottom" constant="28" id="Rk2-Cc-dJ2"/>
-                            <constraint firstItem="RaT-Zf-c5Y" firstAttribute="centerY" secondItem="rL4-Xb-kku" secondAttribute="centerY" id="ZWq-y9-zjp"/>
-                            <constraint firstItem="RaT-Zf-c5Y" firstAttribute="top" secondItem="A9r-72-H4a" secondAttribute="bottom" constant="29" id="Zkb-Ww-4qT"/>
-                            <constraint firstItem="XmM-KT-2N0" firstAttribute="centerY" secondItem="Yyt-nX-zAC" secondAttribute="centerY" id="aXF-rc-Kb4"/>
-                            <constraint firstItem="xNY-xS-d4p" firstAttribute="top" secondItem="DEM-fW-LZA" secondAttribute="bottom" constant="30" id="coO-Pv-yqw"/>
-                            <constraint firstItem="A9r-72-H4a" firstAttribute="leading" secondItem="DEM-fW-LZA" secondAttribute="trailing" constant="25" id="ePW-1T-oee"/>
-                            <constraint firstItem="DEM-fW-LZA" firstAttribute="bottom" secondItem="A9r-72-H4a" secondAttribute="bottom" id="fNK-HM-73u"/>
-                            <constraint firstItem="rL4-Xb-kku" firstAttribute="top" secondItem="Eka-P8-GLo" secondAttribute="bottom" constant="32" id="ir1-jI-JoO"/>
-                            <constraint firstItem="Eka-P8-GLo" firstAttribute="leading" secondItem="rL4-Xb-kku" secondAttribute="leading" id="nJG-aJ-jDP"/>
-                            <constraint firstItem="3FW-hV-Wu8" firstAttribute="centerY" secondItem="XmM-KT-2N0" secondAttribute="centerY" id="nVq-fv-oGS"/>
-                            <constraint firstItem="DEM-fW-LZA" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="ngz-re-ohN"/>
-                            <constraint firstItem="rL4-Xb-kku" firstAttribute="leading" secondItem="RaT-Zf-c5Y" secondAttribute="trailing" constant="6" id="p24-Ag-dRP"/>
-                            <constraint firstItem="DEM-fW-LZA" firstAttribute="leading" secondItem="xNY-xS-d4p" secondAttribute="leading" id="qrZ-aP-23B"/>
-                            <constraint firstItem="xNY-xS-d4p" firstAttribute="leading" secondItem="3FW-hV-Wu8" secondAttribute="leading" id="ruo-um-jw1"/>
-                            <constraint firstItem="Yyt-nX-zAC" firstAttribute="top" secondItem="rL4-Xb-kku" secondAttribute="bottom" constant="35" id="sYh-wm-mzl"/>
-                            <constraint firstItem="DEM-fW-LZA" firstAttribute="trailing" secondItem="3FW-hV-Wu8" secondAttribute="trailing" id="sbp-uF-JSI"/>
-                            <constraint firstItem="3FW-hV-Wu8" firstAttribute="top" secondItem="xNY-xS-d4p" secondAttribute="bottom" constant="30" id="sik-Kb-Cn8"/>
-                            <constraint firstItem="DEM-fW-LZA" firstAttribute="top" secondItem="A9r-72-H4a" secondAttribute="top" id="vUQ-z8-1TB"/>
-                            <constraint firstItem="A9r-72-H4a" firstAttribute="leading" secondItem="XmM-KT-2N0" secondAttribute="leading" id="zU0-fH-BbN"/>
+                            <constraint firstItem="A9r-72-H4a" firstAttribute="bottom" secondItem="Eka-P8-GLo" secondAttribute="bottom" id="2uZ-d8-doS"/>
+                            <constraint firstItem="Eka-P8-GLo" firstAttribute="leading" secondItem="rL4-Xb-kku" secondAttribute="leading" id="3CL-OR-OIp"/>
+                            <constraint firstAttribute="trailing" secondItem="jpL-9a-Mp2" secondAttribute="trailing" constant="20" id="7Re-4I-5bf"/>
+                            <constraint firstItem="rL4-Xb-kku" firstAttribute="leading" secondItem="RaT-Zf-c5Y" secondAttribute="trailing" constant="6" id="Bb7-N3-fZv"/>
+                            <constraint firstItem="RaT-Zf-c5Y" firstAttribute="centerY" secondItem="rL4-Xb-kku" secondAttribute="centerY" id="Bcq-Pu-LN6"/>
+                            <constraint firstItem="DEM-fW-LZA" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="DFq-vU-rRt"/>
+                            <constraint firstItem="DEM-fW-LZA" firstAttribute="leading" secondItem="xNY-xS-d4p" secondAttribute="leading" id="DTd-Nc-mA8"/>
+                            <constraint firstItem="xNY-xS-d4p" firstAttribute="leading" secondItem="3FW-hV-Wu8" secondAttribute="leading" id="HYh-SN-JGH"/>
+                            <constraint firstAttribute="trailing" secondItem="Eka-P8-GLo" secondAttribute="trailing" constant="20" symbolic="YES" id="IGV-nn-05g"/>
+                            <constraint firstItem="3FW-hV-Wu8" firstAttribute="firstBaseline" secondItem="Yyt-nX-zAC" secondAttribute="firstBaseline" id="ITU-Xa-ufE"/>
+                            <constraint firstItem="DEM-fW-LZA" firstAttribute="top" secondItem="A9r-72-H4a" secondAttribute="top" id="J9P-yq-8JS"/>
+                            <constraint firstItem="jpL-9a-Mp2" firstAttribute="top" secondItem="XmM-KT-2N0" secondAttribute="bottom" constant="20" id="M9P-r1-1Dh"/>
+                            <constraint firstItem="rL4-Xb-kku" firstAttribute="top" secondItem="Eka-P8-GLo" secondAttribute="bottom" constant="32" id="NUO-xJ-0LQ"/>
+                            <constraint firstItem="3FW-hV-Wu8" firstAttribute="baseline" secondItem="Yyt-nX-zAC" secondAttribute="firstBaseline" id="NWK-M3-04J"/>
+                            <constraint firstItem="DEM-fW-LZA" firstAttribute="bottom" secondItem="A9r-72-H4a" secondAttribute="bottom" id="OMF-w0-ZSt"/>
+                            <constraint firstItem="Eka-P8-GLo" firstAttribute="leading" secondItem="A9r-72-H4a" secondAttribute="trailing" constant="5" id="SzA-DP-oYZ"/>
+                            <constraint firstItem="rL4-Xb-kku" firstAttribute="leading" secondItem="Yyt-nX-zAC" secondAttribute="leading" id="YBU-F4-hnu"/>
+                            <constraint firstItem="xNY-xS-d4p" firstAttribute="top" secondItem="DEM-fW-LZA" secondAttribute="bottom" constant="30" id="cDu-J6-8Fg"/>
+                            <constraint firstItem="RaT-Zf-c5Y" firstAttribute="leading" secondItem="xNY-xS-d4p" secondAttribute="trailing" constant="12" id="cl7-dE-84O"/>
+                            <constraint firstItem="XmM-KT-2N0" firstAttribute="top" secondItem="RaT-Zf-c5Y" secondAttribute="bottom" constant="28" id="dfR-Je-LXi"/>
+                            <constraint firstItem="3FW-hV-Wu8" firstAttribute="centerY" secondItem="XmM-KT-2N0" secondAttribute="centerY" id="hGf-Uq-IXM"/>
+                            <constraint firstItem="A9r-72-H4a" firstAttribute="leading" secondItem="DEM-fW-LZA" secondAttribute="trailing" constant="25" id="hzO-0E-XN7"/>
+                            <constraint firstItem="XmM-KT-2N0" firstAttribute="centerY" secondItem="Yyt-nX-zAC" secondAttribute="centerY" id="lyd-dF-5mK"/>
+                            <constraint firstItem="RaT-Zf-c5Y" firstAttribute="top" secondItem="A9r-72-H4a" secondAttribute="bottom" constant="29" id="n2M-wz-XPg"/>
+                            <constraint firstItem="A9r-72-H4a" firstAttribute="leading" secondItem="XmM-KT-2N0" secondAttribute="leading" id="nyK-RA-bVP"/>
+                            <constraint firstItem="DEM-fW-LZA" firstAttribute="trailing" secondItem="3FW-hV-Wu8" secondAttribute="trailing" id="orU-OQ-9fu"/>
+                            <constraint firstItem="A9r-72-H4a" firstAttribute="top" secondItem="Eka-P8-GLo" secondAttribute="top" id="qR7-lM-NxH"/>
+                            <constraint firstItem="DEM-fW-LZA" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="rNs-2h-8nd"/>
+                            <constraint firstItem="A9r-72-H4a" firstAttribute="trailing" secondItem="XmM-KT-2N0" secondAttribute="trailing" id="s1f-b7-9Xj"/>
+                            <constraint firstItem="xNY-xS-d4p" firstAttribute="centerY" secondItem="RaT-Zf-c5Y" secondAttribute="centerY" id="zQX-Mh-yH4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dayProgress" destination="A9r-72-H4a" id="McJ-Go-Pzl"/>
+                        <outlet property="labelDayProgress" destination="Eka-P8-GLo" id="UL3-1j-qJx"/>
+                        <outlet property="labelMonthProgress" destination="rL4-Xb-kku" id="RzI-Se-ych"/>
+                        <outlet property="labelYearProgress" destination="Yyt-nX-zAC" id="n9F-5K-EkN"/>
+                        <outlet property="monthProgress" destination="RaT-Zf-c5Y" id="NN6-n9-YOb"/>
+                        <outlet property="yearProgress" destination="XmM-KT-2N0" id="R9t-ZN-IDB"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.5" y="604"/>
+            <point key="canvasLocation" x="-23.5" y="607"/>
         </scene>
     </scenes>
 </document>

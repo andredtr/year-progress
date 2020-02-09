@@ -9,17 +9,17 @@
 /* Begin PBXBuildFile section */
 		654075AA23F0AF000050E055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654075A923F0AF000050E055 /* Assets.xcassets */; };
 		654075AC23F0B6470050E055 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654075AB23F0B6470050E055 /* TimeViewController.swift */; };
+		654075AF23F0C4B60050E055 /* CalculateProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654075AE23F0C4B60050E055 /* CalculateProgress.swift */; };
 		65F529B123EEF60800CE413B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F529B023EEF60800CE413B /* AppDelegate.swift */; };
-		65F529B323EEF60800CE413B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F529B223EEF60800CE413B /* ViewController.swift */; };
 		65F529B823EEF60900CE413B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F529B623EEF60900CE413B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		654075A923F0AF000050E055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		654075AB23F0B6470050E055 /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		654075AE23F0C4B60050E055 /* CalculateProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateProgress.swift; sourceTree = "<group>"; };
 		65F529AD23EEF60800CE413B /* year-progress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "year-progress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F529B023EEF60800CE413B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65F529B223EEF60800CE413B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65F529B723EEF60900CE413B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65F529B923EEF60900CE413B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65F529BA23EEF60900CE413B /* year_progress.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = year_progress.entitlements; sourceTree = "<group>"; };
@@ -36,6 +36,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		654075AD23F0C48D0050E055 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				654075AE23F0C4B60050E055 /* CalculateProgress.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		65F529A423EEF60800CE413B = {
 			isa = PBXGroup;
 			children = (
@@ -55,9 +63,9 @@
 		65F529AF23EEF60800CE413B /* year-progress */ = {
 			isa = PBXGroup;
 			children = (
+				654075AD23F0C48D0050E055 /* Helpers */,
 				654075A923F0AF000050E055 /* Assets.xcassets */,
 				65F529B023EEF60800CE413B /* AppDelegate.swift */,
-				65F529B223EEF60800CE413B /* ViewController.swift */,
 				65F529B623EEF60900CE413B /* Main.storyboard */,
 				654075AB23F0B6470050E055 /* TimeViewController.swift */,
 				65F529B923EEF60900CE413B /* Info.plist */,
@@ -136,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65F529B323EEF60800CE413B /* ViewController.swift in Sources */,
+				654075AF23F0C4B60050E055 /* CalculateProgress.swift in Sources */,
 				654075AC23F0B6470050E055 /* TimeViewController.swift in Sources */,
 				65F529B123EEF60800CE413B /* AppDelegate.swift in Sources */,
 			);

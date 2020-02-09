@@ -10,21 +10,29 @@ import Cocoa
 
 class TimeViewController: NSViewController {
 
+    @IBOutlet weak var dayProgress: NSProgressIndicator!
+    @IBOutlet weak var monthProgress: NSProgressIndicator!
+    @IBOutlet weak var yearProgress: NSProgressIndicator!
+    
+    @IBOutlet weak var labelDayProgress: NSTextField!
+    @IBOutlet weak var labelMonthProgress: NSTextField!
+    @IBOutlet weak var labelYearProgress: NSTextField!
+    
+    @IBAction func quitACtion(_ sender: Any) {
+        NSApplication.shared.terminate(self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        dayProgress.doubleValue = calculateProgress(period: acceptablePeriods.day)
     }
     
 }
 
 extension TimeViewController {
-  // MARK: Storyboard instantiation
   static func freshController() -> TimeViewController {
-    //1.
     let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
-    //2.
     let identifier = NSStoryboard.SceneIdentifier("TimeViewController")
-    //3.
     guard let viewcontroller = storyboard.instantiateController(withIdentifier: identifier) as? TimeViewController else {
       fatalError("Unable to find TimeViewController in Main.storyboard")
     }

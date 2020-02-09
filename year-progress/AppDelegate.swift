@@ -23,17 +23,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        
+        let calc = calculateProgress(period: acceptablePeriods.year)
+        
+        print(calc)
+        
+        
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-//
-//        guard let button = statusItem?.button else {
-//            print("status bar item failed. Try removing some menu bar item.")
-//            NSApp.terminate(nil)
-//            return
-//        }
-//
-//        button.image = NSImage(named: "hourglass")
-//
-//        constructMenu()
+
         if let button = statusItem?.button {
           button.image = NSImage(named:NSImage.Name("hourglass"))
           button.action = #selector(togglePopover(_:))
@@ -45,15 +42,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
     
-    func constructMenu() {
-      let menu = NSMenu()
-
-      menu.addItem(NSMenuItem(title: "Print Quote", action: #selector(AppDelegate.printQuote(_:)), keyEquivalent: "P"))
-      menu.addItem(NSMenuItem.separator())
-      menu.addItem(NSMenuItem(title: "Quit Quotes", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
-
-      statusItem?.menu = menu
-    }
     
     @objc func togglePopover(_ sender: Any?) {
       if popover.isShown {
