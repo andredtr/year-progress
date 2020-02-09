@@ -685,13 +685,102 @@
             <objects>
                 <viewController storyboardIdentifier="TimeViewController" id="XfG-lQ-9wD" customClass="TimeViewController" customModule="year_progress" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="283" height="168"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DEM-fW-LZA">
+                                <rect key="frame" x="18" y="132" width="35" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Day:" id="T8r-xF-gCj">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xNY-xS-d4p">
+                                <rect key="frame" x="18" y="86" width="47" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Month:" id="MLt-Jm-yjb">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3FW-hV-Wu8">
+                                <rect key="frame" x="18" y="40" width="35" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Year:" id="kk6-fj-bv5">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator wantsLayer="YES" maxValue="100" doubleValue="70" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="A9r-72-H4a">
+                                <rect key="frame" x="76" y="131" width="158" height="18"/>
+                            </progressIndicator>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Eka-P8-GLo">
+                                <rect key="frame" x="237" y="132" width="28" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="45%" id="Pqd-e2-ujp">
+                                    <font key="font" metaFont="system" size="9"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rL4-Xb-kku">
+                                <rect key="frame" x="237" y="88" width="28" height="12"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="45%" id="RoF-6X-ENs">
+                                    <font key="font" metaFont="system" size="9"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Yyt-nX-zAC">
+                                <rect key="frame" x="237" y="43" width="28" height="10"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="45%" id="Jux-BJ-79V">
+                                    <font key="font" metaFont="system" size="9"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator wantsLayer="YES" maxValue="100" doubleValue="50" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="RaT-Zf-c5Y">
+                                <rect key="frame" x="75" y="84" width="158" height="20"/>
+                            </progressIndicator>
+                            <progressIndicator wantsLayer="YES" maxValue="100" doubleValue="50" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="XmM-KT-2N0">
+                                <rect key="frame" x="76" y="38" width="158" height="20"/>
+                            </progressIndicator>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Eka-P8-GLo" firstAttribute="leading" secondItem="A9r-72-H4a" secondAttribute="trailing" constant="5" id="FCu-J8-0HV"/>
+                            <constraint firstItem="DEM-fW-LZA" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="G6q-ny-3CF"/>
+                            <constraint firstItem="A9r-72-H4a" firstAttribute="bottom" secondItem="Eka-P8-GLo" secondAttribute="bottom" id="Jn2-1P-DEZ"/>
+                            <constraint firstItem="A9r-72-H4a" firstAttribute="trailing" secondItem="XmM-KT-2N0" secondAttribute="trailing" id="LPv-Ey-tAi"/>
+                            <constraint firstAttribute="trailing" secondItem="Eka-P8-GLo" secondAttribute="trailing" constant="20" symbolic="YES" id="LoP-Ts-dL6"/>
+                            <constraint firstItem="rL4-Xb-kku" firstAttribute="leading" secondItem="Yyt-nX-zAC" secondAttribute="leading" id="NVx-Yo-vN5"/>
+                            <constraint firstItem="xNY-xS-d4p" firstAttribute="centerY" secondItem="RaT-Zf-c5Y" secondAttribute="centerY" id="Qpb-oR-iOF"/>
+                            <constraint firstItem="A9r-72-H4a" firstAttribute="top" secondItem="Eka-P8-GLo" secondAttribute="top" id="QzU-73-ima"/>
+                            <constraint firstItem="RaT-Zf-c5Y" firstAttribute="leading" secondItem="xNY-xS-d4p" secondAttribute="trailing" constant="12" id="RZk-tV-1mt"/>
+                            <constraint firstItem="XmM-KT-2N0" firstAttribute="top" secondItem="RaT-Zf-c5Y" secondAttribute="bottom" constant="28" id="Rk2-Cc-dJ2"/>
+                            <constraint firstItem="RaT-Zf-c5Y" firstAttribute="centerY" secondItem="rL4-Xb-kku" secondAttribute="centerY" id="ZWq-y9-zjp"/>
+                            <constraint firstItem="RaT-Zf-c5Y" firstAttribute="top" secondItem="A9r-72-H4a" secondAttribute="bottom" constant="29" id="Zkb-Ww-4qT"/>
+                            <constraint firstItem="XmM-KT-2N0" firstAttribute="centerY" secondItem="Yyt-nX-zAC" secondAttribute="centerY" id="aXF-rc-Kb4"/>
+                            <constraint firstItem="xNY-xS-d4p" firstAttribute="top" secondItem="DEM-fW-LZA" secondAttribute="bottom" constant="30" id="coO-Pv-yqw"/>
+                            <constraint firstItem="A9r-72-H4a" firstAttribute="leading" secondItem="DEM-fW-LZA" secondAttribute="trailing" constant="25" id="ePW-1T-oee"/>
+                            <constraint firstItem="DEM-fW-LZA" firstAttribute="bottom" secondItem="A9r-72-H4a" secondAttribute="bottom" id="fNK-HM-73u"/>
+                            <constraint firstItem="rL4-Xb-kku" firstAttribute="top" secondItem="Eka-P8-GLo" secondAttribute="bottom" constant="32" id="ir1-jI-JoO"/>
+                            <constraint firstItem="Eka-P8-GLo" firstAttribute="leading" secondItem="rL4-Xb-kku" secondAttribute="leading" id="nJG-aJ-jDP"/>
+                            <constraint firstItem="3FW-hV-Wu8" firstAttribute="centerY" secondItem="XmM-KT-2N0" secondAttribute="centerY" id="nVq-fv-oGS"/>
+                            <constraint firstItem="DEM-fW-LZA" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="ngz-re-ohN"/>
+                            <constraint firstItem="rL4-Xb-kku" firstAttribute="leading" secondItem="RaT-Zf-c5Y" secondAttribute="trailing" constant="6" id="p24-Ag-dRP"/>
+                            <constraint firstItem="DEM-fW-LZA" firstAttribute="leading" secondItem="xNY-xS-d4p" secondAttribute="leading" id="qrZ-aP-23B"/>
+                            <constraint firstItem="xNY-xS-d4p" firstAttribute="leading" secondItem="3FW-hV-Wu8" secondAttribute="leading" id="ruo-um-jw1"/>
+                            <constraint firstItem="Yyt-nX-zAC" firstAttribute="top" secondItem="rL4-Xb-kku" secondAttribute="bottom" constant="35" id="sYh-wm-mzl"/>
+                            <constraint firstItem="DEM-fW-LZA" firstAttribute="trailing" secondItem="3FW-hV-Wu8" secondAttribute="trailing" id="sbp-uF-JSI"/>
+                            <constraint firstItem="3FW-hV-Wu8" firstAttribute="top" secondItem="xNY-xS-d4p" secondAttribute="bottom" constant="30" id="sik-Kb-Cn8"/>
+                            <constraint firstItem="DEM-fW-LZA" firstAttribute="top" secondItem="A9r-72-H4a" secondAttribute="top" id="vUQ-z8-1TB"/>
+                            <constraint firstItem="A9r-72-H4a" firstAttribute="leading" secondItem="XmM-KT-2N0" secondAttribute="leading" id="zU0-fH-BbN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="-23.5" y="604"/>
         </scene>
     </scenes>
 </document>
