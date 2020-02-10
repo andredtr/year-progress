@@ -24,16 +24,21 @@ class TimeViewController: NSViewController {
     @IBAction func quitACtion(_ sender: Any) {
         NSApplication.shared.terminate(self)
     }
+    
+    override func viewWillAppear() {
+          // Do view setup here.
+      dayProgress.doubleValue = calculateProgress(period: .day)
+      monthProgress.doubleValue = calculateProgress(period: .month)
+      yearProgress.doubleValue = calculateProgress(period: .year)
+    
+      labelDayProgress.stringValue = ProgresslabelGenerator(period: .day)
+      labelMonthProgress.stringValue = ProgresslabelGenerator(period: .month)
+      labelYearProgress.stringValue = ProgresslabelGenerator(period: .year)
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
-        dayProgress.doubleValue = calculateProgress(period: .day)
-        monthProgress.doubleValue = calculateProgress(period: .month)
-        yearProgress.doubleValue = calculateProgress(period: .year)
-      
-        labelDayProgress.stringValue = ProgresslabelGenerator(period: .day)
-        labelMonthProgress.stringValue = ProgresslabelGenerator(period: .month)
-        labelYearProgress.stringValue = ProgresslabelGenerator(period: .year)
     }
     
     
