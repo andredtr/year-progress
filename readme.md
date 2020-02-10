@@ -8,7 +8,7 @@ Basicaly it shows how much of the Day,Month and Year has passed.
 
 ## Running
 
-Just open year-progress.xcodeproj and press run.
+Just open **year-progress.xcodeproj** and press run.
 
 ## Releases
 
