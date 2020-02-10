@@ -4,7 +4,7 @@ A simple Mac OSX status bar application made for fun and practice.
 
 Basicaly it shows how much of the Day,Month and Year has passed.
 
-![](year-progress.gif)
+![preview](screen.png)
 
 ## Running as Dev
 
