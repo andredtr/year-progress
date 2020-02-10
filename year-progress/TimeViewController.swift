@@ -8,6 +8,9 @@
 
 import Cocoa
 
+
+
+
 class TimeViewController: NSViewController {
 
     @IBOutlet weak var dayProgress: NSProgressIndicator!
@@ -24,8 +27,15 @@ class TimeViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        dayProgress.doubleValue = calculateProgress(period: acceptablePeriods.day)
+        dayProgress.doubleValue = calculateProgress(period: .day)
+        monthProgress.doubleValue = calculateProgress(period: .month)
+        yearProgress.doubleValue = calculateProgress(period: .year)
+      
+        labelDayProgress.stringValue = ProgresslabelGenerator(period: .day)
+        labelMonthProgress.stringValue = ProgresslabelGenerator(period: .month)
+        labelYearProgress.stringValue = ProgresslabelGenerator(period: .year)
     }
+    
     
 }
 

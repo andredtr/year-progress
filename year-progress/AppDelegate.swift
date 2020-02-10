@@ -14,13 +14,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem?
 
     let popover = NSPopover()
-    
-    @objc func printQuote(_ sender: Any?) {
-      let quoteText = "Never put off until tomorrow what you can do the day after tomorrow."
-      let quoteAuthor = "Mark Twain"
-      
-      print("\(quoteText) — \(quoteAuthor)")
-    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
