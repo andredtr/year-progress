@@ -12,30 +12,27 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     var statusItem: NSStatusItem?
+    var barButton: NSStatusBarButton?
 
     let popover = NSPopover()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        
-        let calc = calculateProgress(period: acceptablePeriods.year)
-        
-        print(calc)
-        
-        
-        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-
-        if let button = statusItem?.button {
-          button.image = NSImage(named:NSImage.Name("hourglass"))
-          button.action = #selector(togglePopover(_:))
-        }
+        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+        barButton = statusItem?.button
+        barButton?.action = #selector(togglePopover(_:))
+        barButton?.title = ProgresslabelGenerator(period: .day)
         popover.contentViewController = TimeViewController.freshController()
+        
+        Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { _ in
+            self.barButton?.title = ProgresslabelGenerator(period: .day)
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
     
-    
+
     @objc func togglePopover(_ sender: Any?) {
       if popover.isShown {
         closePopover(sender: sender)
