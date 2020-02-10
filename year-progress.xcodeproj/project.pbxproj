@@ -20,7 +20,7 @@
 		654075A923F0AF000050E055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		654075AB23F0B6470050E055 /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		654075AE23F0C4B60050E055 /* CalculateProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateProgress.swift; sourceTree = "<group>"; };
-		65F529AD23EEF60800CE413B /* year-progress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "year-progress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F529AD23EEF60800CE413B /* year-progress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "year-progress.app"; path = "/Users/andre/Apps/year-progress/build/Debug/year-progress.app"; sourceTree = "<absolute>"; };
 		65F529B023EEF60800CE413B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65F529B723EEF60900CE413B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65F529B923EEF60900CE413B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,16 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				65F529AF23EEF60800CE413B /* year-progress */,
-				65F529AE23EEF60800CE413B /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		65F529AE23EEF60800CE413B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				65F529AD23EEF60800CE413B /* year-progress.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		65F529AF23EEF60800CE413B /* year-progress */ = {
@@ -121,7 +112,7 @@
 				Base,
 			);
 			mainGroup = 65F529A423EEF60800CE413B;
-			productRefGroup = 65F529AE23EEF60800CE413B /* Products */;
+			productRefGroup = 65F529A423EEF60800CE413B;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

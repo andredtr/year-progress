@@ -6,10 +6,10 @@ Basicaly it shows how much of the Day,Month and Year has passed.
 
 ![](year-progress.gif)
 
-## Running
+## Running as Dev
 
 Just open **year-progress.xcodeproj** and press run.
 
-## Releases
+## Running as User
 
-- There are no releases yet.
+Open **year-progress.app** on releases folder.
